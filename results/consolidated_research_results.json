@@ -1,0 +1,43 @@
+{
+  "baseline_deberta": {
+    "accuracy": 0.7796,
+    "precision": 0.6971,
+    "recall": 0.8761,
+    "f1": 0.7764,
+    "ece": 0.1008,
+    "brier_score": 0.1704,
+    "auroc": 0.883
+  },
+  "advice_inspired_contrastive_classifier": {
+    "accuracy": 0.7214,
+    "precision": 0.6304,
+    "recall": 0.8761,
+    "f1": 0.7332,
+    "ece": 0.234,
+    "brier_score": 0.2474,
+    "auroc": 0.8642
+  },
+  "controlled_confidence_head": {
+    "ece": 0.1762,
+    "brier_score": 0.2041,
+    "auroc": 0.8397,
+    "baseline_predictions_unchanged": true,
+    "max_classifier_probability_difference": 0.0
+  },
+  "temperature_scaling": {
+    "mean_nll_before": 0.5204,
+    "mean_nll_after": 0.4663,
+    "mean_brier_before": 0.1618,
+    "mean_brier_after": 0.1529,
+    "mean_ece_before": 0.0989,
+    "mean_ece_after": 0.0565,
+    "bootstrap_intervals_include_zero": true
+  },
+  "research_conclusion": [
+    "The baseline remains the strongest classifier among the evaluated models.",
+    "The contrastive classifier reduced F1 and worsened calibration.",
+    "The controlled head preserves baseline predictions but does not improve calibration.",
+    "Temperature scaling has promising preliminary calibration results, but uncertainty remains."
+  ],
+  "caveat": "Metrics come from experiments on the SHROOM validation set. The five splits overlap and are not independent datasets."
+}

@@ -1,0 +1,16 @@
+{
+  "drive_root": "MyDrive/hallucination_project",
+  "large_artifacts": {
+    "baseline_checkpoint": "baseline/",
+    "confidence_experiments": "confidence/",
+    "datasets": "data/",
+    "evaluation_results": "results/",
+    "full_text_literature": "results/full_text/"
+  },
+  "instructions": [
+    "Request access to the Google Drive project folder.",
+    "Do not retrain models before inspecting existing checkpoints and results.",
+    "Verify checkpoint paths and inference compatibility.",
+    "Review P1_FREEZE_AND_P2_HANDOFF.md before making changes."
+  ]
+}

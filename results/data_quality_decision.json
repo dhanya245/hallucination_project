@@ -1,0 +1,23 @@
+{
+  "status": "data_audit_completed",
+  "original_examples": 6000,
+  "cleaned_examples": 5906,
+  "duplicates_removed": 91,
+  "conflicting_groups_excluded": 3,
+  "original_task_counts": {
+    "DM": 2000,
+    "MT": 2000,
+    "PG": 2000
+  },
+  "cleaned_task_counts": {
+    "DM": 1991,
+    "MT": 1915,
+    "PG": 2000
+  },
+  "cleaned_label_counts": {
+    "0": 3444,
+    "1": 2462
+  },
+  "decision": "Do not replace the original training dataset or retrain yet. The cleaned dataset changes task and label distributions. Use it only as a separate sensitivity experiment if justified.",
+  "next_step": "Complete the evaluation protocol and reserve an independent test set before further model training."
+}

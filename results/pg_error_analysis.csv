@@ -1,0 +1,43 @@
+index,reference,hypothesis,true_label,predicted_label
+193,"Eddie, please, give me the gun.","Eddie, I'm begging you, I'm gonna need you to give me the gun.",1,0
+194,Are we resolved?,"So, what, we're in the clear now?",0,1
+195,Have you practiced?,You been practicing yet?,0,1
+198,We've got to be quick.,We've got to be a little bit fast.,0,1
+201,I'll take good care of you.,I'm going to take a good care of you now.,0,1
+204,Leave the talking to me.,You're gonna leave the talking to me alone.,0,1
+205,I didn't kill her.,"I'm telling you, I didn't kill her, that's all.",0,1
+207,I'm just not coming.,"I'm just, uh, I'm not coming in.",0,1
+210,How was the trip in?,So how'd the trip get in?,1,0
+211,How long have you known?,How long have you known this?,0,1
+213,No way is this happening.,There's no way this is going to happen.,1,0
+215,I'm not gonna leave you.,I'm not leaving you behind.,0,1
+218,That's what he said.,That's what he's saying.,0,1
+220,Do appreciate your time.,You're very kind of your time.,0,1
+224,Do you want something to drink?,"Hey, do you want to get something to drink, by the way?",0,1
+232,This'll only take a second.,"This won't take more than a second, okay?",0,1
+233,It is no concern of yours.,"It's none of your business, my friend.",0,1
+234,I'll be seeing you soon.,"I'll see you soon, all right?",0,1
+237,"Um, I need you to leave.",I need you to leave now.,0,1
+238,Would you care to join?,Would you like to come with me for a moment?,0,1
+244,Because you're a scientist.,That's because you're a science officer.,0,1
+247,I beg to differ.,I'm not in the same position.,0,1
+251,Can you identify him?,Do you have any way of ID'ing the man's body?,0,1
+257,I'll get you somewhere safe.,"I'm going to get you someplace safe, okay?",0,1
+258,Haven't you got anything better to do?,"You don't have anything better to do, or you don't know what else to do?",0,1
+262,I wanted to be good.,I'd like to be good.,0,1
+266,I think I'm going to need it.,I think I'm going to be the one who's going to need it.,0,1
+271,Tell me what the problem is.,Tell me what the problem is here.,0,1
+273,They'll say nothing.,They're not going to say a word of the word.,0,1
+275,No one has died.,There's no one who's been killed in the last year.,0,1
+276,I'm just like everyone else.,"I don't know, I'm just like all the others.",0,1
+277,It's not safe.,It's a little bit too dangerous.,0,1
+279,What do you care anyway?,"What's it to you, anyway?",0,1
+281,I'm sorry I can't take your call right now.,"I'm sorry I can't take your call right now, okay?",0,1
+283,She's gonna have a baby.,She's going to be able to have a baby.,0,1
+288,I'm just concerned.,I'm just a little concerned.,1,0
+289,I'm gonna make a call.,"I'm gonna make a call, and I'm gonna make a call, okay?",0,1
+293,And she's doing good.,"And, uh, she's doing a good job.",1,0
+302,Carry on working.,You're gonna have to work.,0,1
+304,I thought you were coming with us?,Didn't you come with us today?,0,1
+306,I need to do this alone.,"I'm sorry, I've got to do this by myself.",0,1
+310,Just breathe deep.,"Just breathe deep, and I'll be right there.",0,1

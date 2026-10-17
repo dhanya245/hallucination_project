@@ -1,0 +1,63 @@
+{
+  "training_rows": 6000,
+  "unique_training_pairs": 5909,
+  "unique_training_hypotheses": 5863,
+  "results": {
+    "model_agnostic": {
+      "official_test_rows": 1500,
+      "exact_reference_hypothesis_pair_matches": 18,
+      "exact_hypothesis_matches": 19,
+      "pair_match_ids_sample": [
+        95,
+        433,
+        513,
+        681,
+        690,
+        817,
+        1030,
+        1413,
+        1473,
+        1569,
+        1598,
+        1606,
+        1626,
+        1691,
+        1694,
+        1904,
+        2498,
+        2896
+      ],
+      "hypothesis_match_ids_sample": [
+        95,
+        433,
+        513,
+        681,
+        686,
+        690,
+        817,
+        1030,
+        1413,
+        1473,
+        1569,
+        1598,
+        1606,
+        1626,
+        1691,
+        1694,
+        1904,
+        2498,
+        2896
+      ],
+      "normalization": "lowercase, trim, collapse whitespace"
+    },
+    "model_aware": {
+      "official_test_rows": 1500,
+      "exact_reference_hypothesis_pair_matches": 0,
+      "exact_hypothesis_matches": 0,
+      "pair_match_ids_sample": [],
+      "hypothesis_match_ids_sample": [],
+      "normalization": "lowercase, trim, collapse whitespace"
+    }
+  },
+  "limitation": "Exact normalized string matching only; semantic overlap is not tested."
+}

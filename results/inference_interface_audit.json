@@ -1,0 +1,17 @@
+{
+  "required_input": [
+    "question",
+    "context",
+    "answer"
+  ],
+  "required_output": [
+    "prediction",
+    "confidence"
+  ],
+  "current_baseline_input": [
+    "reference",
+    "hypothesis"
+  ],
+  "current_baseline_test": "passed",
+  "next_action": "Define and document the mapping from question/context/answer to the trained model's reference/hypothesis input."
+}

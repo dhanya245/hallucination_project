@@ -1,0 +1,27 @@
+{
+  "source": "results/final_comparison_draft.json",
+  "checks": {
+    "accuracy": true,
+    "precision": true,
+    "recall": true,
+    "f1": true,
+    "ece": true,
+    "brier": true,
+    "auroc": true,
+    "contrastive_f1_below_baseline": true,
+    "contrastive_ece_above_baseline": true,
+    "temperature_scaling_nll_lower": true,
+    "temperature_scaling_brier_lower": true,
+    "temperature_scaling_ece_lower": true,
+    "uncertainty_caveat_present": true,
+    "official_test_summary_exists": true,
+    "official_test_has_two_tracks": true,
+    "model_agnostic_overlap_audit_present": true,
+    "model_aware_overlap_audit_present": true,
+    "model_agnostic_sensitivity_excludes_19": true,
+    "validation_reuse_caveat_present": true,
+    "semantic_overlap_limitation_present": true
+  },
+  "all_checks_passed": true,
+  "interpretation": "Consistency checks passed against saved artifacts. This checks file and protocol consistency; it is not an independent reproduction of model evaluation or proof of complete data independence."
+}

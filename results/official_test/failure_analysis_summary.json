@@ -1,0 +1,50 @@
+{
+  "sample_size": 36,
+  "sampling_method": "Random seed 42; up to 3 examples per track/task/error-type group",
+  "category_counts": {
+    "Unsupported addition": 2,
+    "Semantic mismatch": 2,
+    "Meaning shift / partial paraphrase": 1,
+    "Possible semantic over-detection": 1,
+    "Semantic mismatch / number or possession detail": 1,
+    "Possible paraphrase / lexical mismatch": 1,
+    "Polarity / intent shift": 1,
+    "Valid paraphrase missed by gold/model boundary": 1,
+    "Tense / modality shift": 1,
+    "Morphological paraphrase / annotation ambiguity": 1,
+    "Possible valid paraphrase / gold-label ambiguity": 1,
+    "Omission": 1,
+    "Semantic / speech-act shift": 1,
+    "Grammar / number change": 1,
+    "Meaning mismatch / idiom": 1,
+    "Loss of intensity / semantic generalization": 1,
+    "Part-of-speech / definition mismatch": 1,
+    "Entity/category mismatch": 1,
+    "Unsupported addition / definition drift": 1,
+    "Over-generalization / omission": 1,
+    "Relation ambiguity": 1,
+    "Relation / definition mismatch": 1,
+    "Meaning shift / added claim": 1,
+    "Potentially valid paraphrase / specificity shift": 1,
+    "Number / possessive detail shift": 1,
+    "Perspective / number shift": 1,
+    "Pronoun / role and event detail shift": 1,
+    "Lexical substitution / possible valid paraphrase": 1,
+    "Negation / logical relation shift": 1,
+    "Meaning reversal / temporal comparison": 1,
+    "Omission of proposition / semantic relation": 1,
+    "Argument structure / paraphrase ambiguity": 1,
+    "Omission / temporal specificity": 1,
+    "Voice / idiomatic awkwardness": 1
+  },
+  "track_counts": {
+    "model_agnostic": 18,
+    "model_aware": 18
+  },
+  "task_counts": {
+    "DM": 12,
+    "MT": 12,
+    "PG": 12
+  },
+  "caveat": "Exploratory manual categorization of 36 errors; not a population estimate. Categories may overlap conceptually and some labels are ambiguous."
+}

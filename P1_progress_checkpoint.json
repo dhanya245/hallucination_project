@@ -1,0 +1,153 @@
+{
+  "updated_utc": "2026-10-16T10:25:26.987397+00:00",
+  "current_stage": "Initial experiments and exploratory error analysis completed; next: controlled confidence-head error analysis and evaluation review.",
+  "completed": [
+    "Baseline DeBERTa trained and saved",
+    "Contrastive model trained for 2 epochs and saved",
+    "Confidence head trained separately and saved",
+    "Validation set reconstructed and evaluation reproduced",
+    "Recovery manifest, script, and utility definitions saved"
+  ],
+  "verified_baseline": {
+    "accuracy": 0.779559118236473,
+    "f1": 0.7764227642276422,
+    "ece": 0.10078459440586802,
+    "brier_score": 0.1704182340572377,
+    "auroc": 0.883003036338111
+  },
+  "next_task": "Investigate a controlled confidence-aware training objective without degrading baseline classification performance",
+  "important_rule": "Do not retrain the baseline unless its checkpoint is missing or invalid",
+  "temperature_scaling": {
+    "status": "completed",
+    "five_split_summary": "results/temperature_scaling/five_split_summary.json",
+    "mean_original_nll": 0.5204,
+    "mean_scaled_nll": 0.4663,
+    "mean_original_brier": 0.1618,
+    "mean_scaled_brier": 0.1529,
+    "mean_original_ece": 0.0989,
+    "mean_scaled_ece": 0.0565,
+    "temperatures": [
+      2.37,
+      2.055,
+      1.86,
+      1.95,
+      2.125
+    ],
+    "note": "Five overlapping stratified splits of one validation set; preliminary evidence.",
+    "bootstrap_evaluation": {
+      "status": "completed",
+      "file": "results/temperature_scaling/bootstrap_evaluation.json",
+      "iterations": 2000,
+      "nll_difference": -0.05064497317348837,
+      "brier_difference": -0.007287524234789511,
+      "ece_difference": -0.03645434761047365,
+      "conclusion": "All three 95% bootstrap confidence intervals include zero; improvement is promising but inconclusive."
+    }
+  },
+  "per_task_error_analysis": {
+    "status": "completed",
+    "task_metrics_file": "results/per_task_metrics.json",
+    "pg_errors_file": "results/pg_error_analysis.csv",
+    "pg_confusion_file": "results/pg_confusion_analysis.json",
+    "pg_false_positives": 37,
+    "pg_false_negatives": 5,
+    "pg_finding": "PG has a high false-positive rate and low precision."
+  },
+  "consolidated_comparison": {
+    "status": "draft_saved",
+    "file": "results/final_comparison_draft.json",
+    "conclusion": "The contrastive classifier did not improve baseline F1 or calibration. Temperature scaling shows promising calibration improvements, but held-out bootstrap confidence intervals include zero."
+  },
+  "consolidated_research_results": {
+    "status": "saved",
+    "file": "results/consolidated_research_results.json"
+  },
+  "artifact_audit": {
+    "checked_files": 12,
+    "missing_files": [],
+    "status": "complete"
+  },
+  "controlled_head_checkpoint_inspection": {
+    "status": "inspected",
+    "checkpoint": "confidence/controlled_head_only/controlled_head_epoch_2.pt",
+    "keys": [
+      "weight",
+      "bias"
+    ],
+    "note": "Verify backbone compatibility before task-wise confidence evaluation."
+  },
+  "controlled_head_error_detection": {
+    "status": "completed",
+    "file": "results/controlled_head_error_detection.json"
+  },
+  "confidence_head_conclusion": {
+    "status": "saved",
+    "file": "results/confidence_head_conclusion.json",
+    "finding": "The controlled confidence head preserves baseline predictions but has lower error-detection AUROC than baseline softmax confidence on DM, MT, and PG."
+  },
+  "dataset_overlap_audit": {
+    "status": "completed",
+    "file": "results/dataset_overlap_audit.json",
+    "matching_examples": "results/dataset_overlap_examples.json",
+    "overlap_count": 2,
+    "validation_overlap_percentage": 0.4,
+    "caveat": "Exact/normalized overlap only; semantic overlap not tested."
+  },
+  "training_duplicate_audit": {
+    "status": "completed",
+    "file": "results/training_duplicate_audit.json",
+    "duplicate_groups": 89,
+    "conflicting_label_groups": 3
+  },
+  "clean_dataset_experiment": {
+    "status": "prepared_not_trained",
+    "file": "data/labeled_deduplicated_no_conflicts.json",
+    "examples": 5906,
+    "conflicting_groups_excluded": 3,
+    "note": "Original dataset preserved; cleaned dataset is for a separate experiment."
+  },
+  "clean_dataset_distribution": {
+    "status": "completed",
+    "file": "results/clean_dataset_distribution.json"
+  },
+  "data_quality_decision": {
+    "status": "saved",
+    "file": "results/data_quality_decision.json",
+    "retraining_decision": "deferred"
+  },
+  "shroom_split_audit": {
+    "status": "completed",
+    "file": "results/shroom_split_audit.json",
+    "note": "Original training archive is unlabeled; validation labels are available. Do not designate validation as an independent test set."
+  },
+  "evaluation_protocol": {
+    "status": "review_required",
+    "file": "results/evaluation_protocol.json",
+    "next_action": "Confirm official evaluation split availability; prepare final tables and plots without claiming independent-test performance."
+  },
+  "research_figures": {
+    "status": "generated",
+    "directory": "results/figures",
+    "files": [
+      "model_comparison_f1.png",
+      "model_comparison_ece.png",
+      "model_comparison_brier_score.png",
+      "temperature_scaling_comparison.png",
+      "baseline_task_f1.png"
+    ]
+  },
+  "draft_report": {
+    "status": "created",
+    "file": "results/P1_research_results.md",
+    "note": "Draft; verify all figures and align with the official P1 rubric."
+  },
+  "inference_module": {
+    "status": "created_needs_testing",
+    "file": "inference.py",
+    "limitation": "Question is accepted but unused by baseline; output labels are entailment/not_entailment, not yet a validated hallucination mapping."
+  },
+  "label_mapping_audit": {
+    "status": "saved_mapping_requires_validation",
+    "file": "results/label_mapping_audit.json"
+  }
+}

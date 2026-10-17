@@ -1,0 +1,25 @@
+{
+  "status": "official_test_evaluated_with_limitations",
+  "training_data": "6000 Gemini-labeled SHROOM training examples",
+  "development_data": "499 labeled SHROOM examples",
+  "independent_test_set_available_in_current_files": true,
+  "validation_usage": "The 499-example labeled SHROOM validation set was repeatedly used for evaluation and experiment decisions. Treat it as development data, not a fresh independent test set.",
+  "overlap_audit": {
+    "training_vs_validation": "results/dataset_overlap_audit.json",
+    "training_vs_official_test": "results/official_test/overlap_audit.json",
+    "interpretation": "Exact normalized overlap checks only. The model-agnostic track has 19 exact hypothesis matches; the model-aware track has none. The model-agnostic sensitivity analysis shows little metric change after excluding the 19 matches. Semantic overlap is not tested."
+  },
+  "duplicate_audit": "results/training_duplicate_audit.json",
+  "limitation": "Official SHROOM test evaluation is available for the saved baseline. These results do not establish that confidence-aware variants generalize better. Exact-string checks cannot prove full independence, and validation was reused during development.",
+  "readme_file": "results/shroom_readme.txt",
+  "official_test_evaluation": {
+    "source": "data/official_test/SHROOM_test-labeled.zip",
+    "tracks": {
+      "model_agnostic": 1500,
+      "model_aware": 1500
+    },
+    "metrics": "results/official_test/summary.json",
+    "overlap_audit": "results/official_test/overlap_audit.json",
+    "model_agnostic_sensitivity": "results/official_test/model_agnostic_overlap_sensitivity.json"
+  }
+}

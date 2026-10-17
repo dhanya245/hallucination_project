@@ -1,0 +1,52 @@
+{
+  "n": 1500,
+  "accuracy": 0.768,
+  "precision": 0.6490455212922174,
+  "recall": 0.8021778584392014,
+  "f1": 0.7175324675324676,
+  "ece": 0.08395781250794732,
+  "brier_score": 0.17506556360635656,
+  "auroc": 0.857968747310666,
+  "log_loss": 0.5593811393540773,
+  "confusion_matrix_labels_0_1": [
+    [
+      710,
+      239
+    ],
+    [
+      109,
+      442
+    ]
+  ],
+  "label_counts": {
+    "Not Hallucination": 949,
+    "Hallucination": 551
+  },
+  "task_metrics": {
+    "DM": {
+      "n": 562,
+      "accuracy": 0.7544483985765125,
+      "precision": 0.7425373134328358,
+      "recall": 0.7425373134328358,
+      "f1": 0.7425373134328358,
+      "auroc": 0.8262387044369986
+    },
+    "MT": {
+      "n": 563,
+      "accuracy": 0.7460035523978685,
+      "precision": 0.6141479099678456,
+      "recall": 0.8925233644859814,
+      "f1": 0.7276190476190476,
+      "auroc": 0.8981335189995447
+    },
+    "PG": {
+      "n": 375,
+      "accuracy": 0.8213333333333334,
+      "precision": 0.5098039215686274,
+      "recall": 0.7536231884057971,
+      "f1": 0.6081871345029239,
+      "auroc": 0.8589561428436109
+    }
+  },
+  "metric_note": "Brier score and log loss recomputed using the binary probability P(Hallucination). The previous Brier score used both class errors and was twice the standard binary Brier score."
+}

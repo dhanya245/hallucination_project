@@ -1,0 +1,57 @@
+{
+  "status": "reconstructed_documentation_not_original_config",
+  "baseline": {
+    "checkpoint_directory": "baseline",
+    "source_checkpoint": "MoritzLaurer/deberta-v3-large-zeroshot-v1.1-all-33",
+    "max_length": 512,
+    "seed": 42,
+    "epochs": 1,
+    "learning_rate": 2e-05,
+    "per_device_train_batch_size": 1,
+    "gradient_accumulation_steps": 16,
+    "warmup_steps": 71,
+    "weight_decay": 0.01,
+    "max_grad_norm": 1.0,
+    "gradient_checkpointing": true,
+    "lr_scheduler_type": "linear",
+    "optimizer": "adamw_torch_fused",
+    "precision": "fp32"
+  },
+  "contrastive_confidence": {
+    "checkpoint_directory": "confidence",
+    "epochs": 2,
+    "learning_rate": 1e-05,
+    "batch_size": 1,
+    "gradient_accumulation_steps": 16,
+    "pair_count": 2084,
+    "verified_average_training_loss": [
+      0.304,
+      0.1376
+    ],
+    "loss_formula": "not recoverable from history; see loss.py for an explicitly reconstructed reference objective"
+  },
+  "controlled_head_only": {
+    "checkpoint_directory": "confidence/controlled_head_only",
+    "epochs": 2,
+    "verified_average_training_loss": [
+      0.07272125814903721,
+      0.0635338960047418
+    ],
+    "trainable_parameters": 1025,
+    "checkpoint_contains": [
+      "weight",
+      "bias"
+    ],
+    "optimizer_and_learning_rate": "not verified from available artifacts"
+  },
+  "label_mapping": {
+    "0": "Reliable",
+    "1": "Hallucinated"
+  },
+  "notes": [
+    "These settings are compiled from saved training_args.bin and JSON histories.",
+    "Missing original train.py, model.py, loss.py and training_config.json were not recoverable verbatim.",
+    "Do not describe reconstructed scripts as the exact source used for historical results.",
+    "The original baseline checkpoint is saved and should not be overwritten by a rerun."
+  ]
+}

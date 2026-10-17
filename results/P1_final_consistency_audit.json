@@ -1,0 +1,31 @@
+{
+  "required_artifacts": {
+    "README.md": true,
+    "inference.py": true,
+    "requirements.txt": true,
+    "results/P1_research_results.md": true,
+    "results/literature_review.md": true,
+    "results/verified_model_comparison.json": true,
+    "results/official_test/summary.json": true,
+    "results/reproducibility_artifact_audit.json": true,
+    "results/reproducibility_checkpoint_smoke_test.json": true,
+    "reproducibility_source/model.py": true,
+    "reproducibility_source/loss.py": true,
+    "reproducibility_source/train.py": true,
+    "reproducibility_source/training_config.json": true,
+    "reproducibility_source/REPRODUCIBILITY_NOTES.md": true
+  },
+  "metric_consistency": {
+    "comparison_files_present": true,
+    "baseline_f1_matches": true,
+    "older_confidence_head_metric_matches": true,
+    "official_test_summary_present": true,
+    "checkpoint_smoke_test_passed": true
+  },
+  "documentation_presence": {
+    "readme_mentions_inference": true,
+    "report_mentions_official_test": true,
+    "repro_notes_explain_missing_original_source": true,
+    "repro_notes_distinguish_reconstructed_loss": true
+  }
+}

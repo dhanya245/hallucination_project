@@ -1,0 +1,26 @@
+[
+  {
+    "task": "DM",
+    "examples": 187,
+    "accuracy": 0.7967914438502673,
+    "mean_reliable_confidence": 0.49571579694747925,
+    "mean_confidence_correct": 0.49777016043663025,
+    "mean_confidence_incorrect": 0.4876604676246643
+  },
+  {
+    "task": "MT",
+    "examples": 187,
+    "accuracy": 0.839572192513369,
+    "mean_reliable_confidence": 0.4839494526386261,
+    "mean_confidence_correct": 0.4953325688838959,
+    "mean_confidence_incorrect": 0.42437800765037537
+  },
+  {
+    "task": "PG",
+    "examples": 125,
+    "accuracy": 0.664,
+    "mean_reliable_confidence": 0.4697585105895996,
+    "mean_confidence_correct": 0.49417844414711,
+    "mean_confidence_incorrect": 0.4215000569820404
+  }
+]

@@ -1,0 +1,30 @@
+{
+  "status": "exploratory_evaluation_completed",
+  "results_file": "results/baseline_vs_head_error_detection.json",
+  "finding": "The controlled confidence head preserves baseline predictions but has lower error-detection AUROC than baseline softmax confidence on DM, MT, and PG.",
+  "decision": "Do not claim the controlled confidence head improves error detection. Retain the result as a negative finding.",
+  "next_priority": "Evaluate calibration methods on a properly separated test set, then determine whether further confidence-head development is justified.",
+  "task_results": {
+    "DM": {
+      "baseline_error_auroc": 0.6229247615683504,
+      "head_error_auroc": 0.5241963970328506,
+      "baseline_accuracy": 0.7967914438502673,
+      "head_accuracy": 0.7967914438502673,
+      "predictions_identical": true
+    },
+    "MT": {
+      "baseline_error_auroc": 0.7876857749469215,
+      "head_error_auroc": 0.670276008492569,
+      "baseline_accuracy": 0.839572192513369,
+      "head_accuracy": 0.839572192513369,
+      "predictions_identical": true
+    },
+    "PG": {
+      "baseline_error_auroc": 0.6853126792885829,
+      "head_error_auroc": 0.6660929432013769,
+      "baseline_accuracy": 0.664,
+      "head_accuracy": 0.664,
+      "predictions_identical": true
+    }
+  }
+}

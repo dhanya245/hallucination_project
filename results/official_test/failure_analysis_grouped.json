@@ -1,0 +1,34 @@
+{
+  "sample_size": 36,
+  "sampling": "36 errors; up to 3 per track/task/error-type group; random seed 42",
+  "theme_counts": {
+    "Semantic or paraphrase mismatch": 16,
+    "Logical, grammatical, or structural shift": 10,
+    "Omission or loss of specificity": 5,
+    "Unsupported addition": 4,
+    "Potentially ambiguous label or valid paraphrase": 1
+  },
+  "theme_counts_by_track": {
+    "Logical, grammatical, or structural shift": {
+      "model_agnostic": 4,
+      "model_aware": 6
+    },
+    "Omission or loss of specificity": {
+      "model_agnostic": 1,
+      "model_aware": 4
+    },
+    "Potentially ambiguous label or valid paraphrase": {
+      "model_agnostic": 1,
+      "model_aware": 0
+    },
+    "Semantic or paraphrase mismatch": {
+      "model_agnostic": 10,
+      "model_aware": 6
+    },
+    "Unsupported addition": {
+      "model_agnostic": 2,
+      "model_aware": 2
+    }
+  },
+  "limitation": "Exploratory manual classification. Themes are assigned by a transparent keyword mapping over provisional category names; they are not independently validated. The sample is not a population estimate, and themes may overlap conceptually."
+}

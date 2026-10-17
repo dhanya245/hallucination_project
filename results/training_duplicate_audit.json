@@ -1,0 +1,657 @@
+{
+  "total_examples": 6000,
+  "unique_normalized_examples": 5909,
+  "duplicate_groups": 89,
+  "examples_in_duplicate_groups": 180,
+  "conflicting_label_groups": 3,
+  "duplicate_details": [
+    {
+      "key": "('mt', \"don't swim in this pond.\", 'do not swim in this pond.')",
+      "labels": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "key": "('mt', 'tom pronounced my name wrong.', 'tom said my name wrong.')",
+      "labels": [
+        0,
+        0
+      ]
+    },
+    {
+      "key": "('mt', 'i lived in a three-room apartment when i lived in boston.', 'i lived in a three-bedroom apartment while i was in boston.')",
+      "labels": [
+        1,
+        1
+      ]
+    },
+    {
+      "key": "('mt', \"i've explained that to her.\", 'i explained it to her.')",
+      "labels": [
+        0,
+        0
+      ]
+    },
+    {
+      "key": "('mt', \"maybe i'm better than you.\", \"maybe i'm better than you.\")",
+      "labels": [
+        0,
+        0
+      ]
+    },
+    {
+      "key": "('mt', \"tom isn't my husband yet.\", \"tom's not my husband yet.\")",
+      "labels": [
+        0,
+        0
+      ]
+    },
+    {
+      "key": "('mt', 'i said yes.', 'i said yes.')",
+      "labels": [
+        0,
+        0
+      ]
+    },
+    {
+      "key": "('mt', 'have you ever written a book?', 'have you ever written a book?')",
+      "labels": [
+        0,
+        0
+      ]
+    },
+    {
+      "key": "('mt', \"i'll tell him you were here.\", \"i'll tell him you were here.\")",
+      "labels": [
+        0,
+        0
+      ]
+    },
+    {
+      "key": "('mt', 'have you seen my cell phone?', 'have you seen my cell phone?')",
+      "labels": [
+        0,
+        0
+      ]
+    },
+    {
+      "key": "('mt', 'were you the one to find it?', 'did you find her?')",
+      "labels": [
+        1,
+        1
+      ]
+    },
+    {
+      "key": "('mt', 'do you know where tom keeps his bicycle?', 'do you know where tom keeps his bike?')",
+      "labels": [
+        0,
+        0
+      ]
+    },
+    {
+      "key": "('dm', 'the state or quality of being a spouse.', 'the state or condition of being a spouse.')",
+      "labels": [
+        0,
+        0
+      ]
+    },
+    {
+      "key": "('mt', \"we're very proud of our team.\", 'we are very proud of our team.')",
+      "labels": [
+        0,
+        0
+      ]
+    },
+    {
+      "key": "('mt', 'we can buy it.', 'we can buy it.')",
+      "labels": [
+        0,
+        0
+      ]
+    },
+    {
+      "key": "('mt', 'who told you the story?', 'who told you the story?')",
+      "labels": [
+        0,
+        0
+      ]
+    },
+    {
+      "key": "('mt', \"i don't wear shoes.\", \"i don't wear shoes.\")",
+      "labels": [
+        0,
+        0
+      ]
+    },
+    {
+      "key": "('mt', \"why don't we switch seats?\", \"why don't we change places?\")",
+      "labels": [
+        0,
+        0
+      ]
+    },
+    {
+      "key": "('mt', \"that's why your name is last on my list.\", \"that's why your name and the last one on my list.\")",
+      "labels": [
+        1,
+        1
+      ]
+    },
+    {
+      "key": "('dm', 'resembling or characteristic of the mona lisa.', 'a en given name.')",
+      "labels": [
+        1,
+        1
+      ]
+    },
+    {
+      "key": "('mt', 'he was proud.', 'he was proud.')",
+      "labels": [
+        0,
+        0
+      ]
+    },
+    {
+      "key": "('dm', '(history, homeopathy, originally, _, pejorative, obsolete) a homoeopathic practitioner who sought to ascertain the aetiologies of diseases, focusing on the symptoms most regularly associated with their diagnosis (to the exclusion of peripheral and occasional symptoms), and who, for their treatment, selected remedies (administered in more-or-less undiluted form) on the basis of their general physiological effects, ignoring incidental and side-effects. [mid-19th\u2013late 19th c., first attested in 1847 and common in the 1860s]', 'one who speculates.')",
+      "labels": [
+        1,
+        1
+      ]
+    },
+    {
+      "key": "('mt', 'will you sell it?', 'will you sell it?')",
+      "labels": [
+        0,
+        0
+      ]
+    },
+    {
+      "key": "('mt', 'you want to be a lawyer.', 'you want to be a lawyer.')",
+      "labels": [
+        0,
+        0
+      ]
+    },
+    {
+      "key": "('mt', 'you can borrow my car whenever you want to.', 'you can take my car whenever you want.')",
+      "labels": [
+        0,
+        0
+      ]
+    },
+    {
+      "key": "('mt', 'he lost his job last month.', 'he lost his job last month.')",
+      "labels": [
+        0,
+        0
+      ]
+    },
+    {
+      "key": "('mt', 'christmas is celebrated on december twenty-fifth.', 'christmas is celebrated on the twenty-fifth of december.')",
+      "labels": [
+        0,
+        0
+      ]
+    },
+    {
+      "key": "('mt', 'can you write your name here?', 'can you write your name here?')",
+      "labels": [
+        0,
+        0
+      ]
+    },
+    {
+      "key": "('mt', 'tom says he needs to talk with you.', 'tom says he needs to talk to you.')",
+      "labels": [
+        0,
+        0
+      ]
+    },
+    {
+      "key": "('mt', 'you could at least take a shower.', 'you could at least take a shower.')",
+      "labels": [
+        0,
+        0
+      ]
+    },
+    {
+      "key": "('mt', 'tom should do it today.', 'tom needs to do it today.')",
+      "labels": [
+        1,
+        1
+      ]
+    },
+    {
+      "key": "('mt', 'everyone knows my story.', 'everyone knows my story.')",
+      "labels": [
+        0,
+        0
+      ]
+    },
+    {
+      "key": "('dm', 'the act of approving; an assenting to the propriety of a thing with some degree of pleasure or satisfaction; approval, sanction, commendation or official recognition.', 'the act of approving; approval.')",
+      "labels": [
+        0,
+        0
+      ]
+    },
+    {
+      "key": "('mt', 'did you weigh yourself yesterday?', 'did you weigh yesterday?')",
+      "labels": [
+        1,
+        1
+      ]
+    },
+    {
+      "key": "('mt', 'the road is slippery.', 'the road is slippery.')",
+      "labels": [
+        0,
+        0
+      ]
+    },
+    {
+      "key": "('mt', \"have you seen my cell phone? i can't find it.\", \"you haven't seen my cell phone, can't find it.\")",
+      "labels": [
+        1,
+        1
+      ]
+    },
+    {
+      "key": "('dm', 'the quality of being a princess.', 'the state or quality of being a princess.')",
+      "labels": [
+        0,
+        0
+      ]
+    },
+    {
+      "key": "('mt', \"i can't excuse his laziness.\", \"i can't forgive his laziness.\")",
+      "labels": [
+        1,
+        1
+      ]
+    },
+    {
+      "key": "('mt', \"i knew you wouldn't have enough money.\", \"i knew you didn't have enough money.\")",
+      "labels": [
+        1,
+        1
+      ]
+    },
+    {
+      "key": "('dm', '(uk, _, dialectal, especially, scotland, northern england) a waterfall or cataract, or a ravine down which its water rushes.', '(scotland, northern england, northern ireland) a hill.')",
+      "labels": [
+        1,
+        1
+      ]
+    },
+    {
+      "key": "('mt', \"let's go play soccer.\", \"let's play football.\")",
+      "labels": [
+        0,
+        0
+      ]
+    },
+    {
+      "key": "('mt', 'tom saw mary push john off the pier.', 'tom saw mary push john off the pier.')",
+      "labels": [
+        0,
+        0
+      ]
+    },
+    {
+      "key": "('mt', 'who taught you how to ski?', 'who taught you how to ski?')",
+      "labels": [
+        0,
+        0
+      ]
+    },
+    {
+      "key": "('mt', \"you'll have to do that even if you don't want to.\", \"you're gonna have to do it even if you don't want to.\")",
+      "labels": [
+        0,
+        0
+      ]
+    },
+    {
+      "key": "('mt', 'the smell of wisteria strengthens and restores the memory.', 'the smell of glycinia strengthens and restores memory.')",
+      "labels": [
+        0,
+        1
+      ]
+    },
+    {
+      "key": "('mt', 'play with the cats.', 'play with cats.')",
+      "labels": [
+        0,
+        0
+      ]
+    },
+    {
+      "key": "('mt', \"has tom chosen where he's going to apply yet?\", \"tom hasn't chosen where to go yet?\")",
+      "labels": [
+        1,
+        1
+      ]
+    },
+    {
+      "key": "('dm', 'a en given name.', 'a en given name.')",
+      "labels": [
+        0,
+        0
+      ]
+    },
+    {
+      "key": "('mt', 'this city is made out of glass castles.', 'this city is built of glass castles.')",
+      "labels": [
+        0,
+        0
+      ]
+    },
+    {
+      "key": "('mt', 'tom told me he liked this kind of music.', 'tom told me he liked that kind of music.')",
+      "labels": [
+        0,
+        0
+      ]
+    },
+    {
+      "key": "('mt', 'it would be safer to stay here.', 'it would be safer to stay here.')",
+      "labels": [
+        0,
+        0
+      ]
+    },
+    {
+      "key": "('mt', 'tom is shouting at mary.', 'tom yells at mary.')",
+      "labels": [
+        0,
+        0
+      ]
+    },
+    {
+      "key": "('mt', \"no one wants to be on tom's team.\", \"no one wants to be on tom's team.\")",
+      "labels": [
+        0,
+        0
+      ]
+    },
+    {
+      "key": "('mt', 'are you going to kiss me?', 'will you kiss me?')",
+      "labels": [
+        0,
+        0
+      ]
+    },
+    {
+      "key": "('mt', \"i don't know what to give tom.\", \"i don't know what to give tom.\")",
+      "labels": [
+        0,
+        0
+      ]
+    },
+    {
+      "key": "('mt', \"it seems you've learned a lot.\", 'you seem to have learned a lot.')",
+      "labels": [
+        0,
+        0
+      ]
+    },
+    {
+      "key": "('dm', 'a district of tainan, taiwan.', 'a district of tainan, taiwan.')",
+      "labels": [
+        0,
+        0
+      ]
+    },
+    {
+      "key": "('mt', \"don't take the cheapest one.\", 'do not take the cheapest.')",
+      "labels": [
+        0,
+        0
+      ]
+    },
+    {
+      "key": "('mt', 'tom said mary felt sick.', 'tom said mary was sick.')",
+      "labels": [
+        0,
+        0
+      ]
+    },
+    {
+      "key": "('mt', 'tom is the star of the team.', 'tom is the star of the team.')",
+      "labels": [
+        0,
+        0
+      ]
+    },
+    {
+      "key": "('mt', 'christmas is celebrated on december 25th.', 'christmas is celebrated on the twenty-fifth of december.')",
+      "labels": [
+        0,
+        0
+      ]
+    },
+    {
+      "key": "('mt', 'tom and mary stopped kissing.', 'tom and mary stopped kissing.')",
+      "labels": [
+        0,
+        0
+      ]
+    },
+    {
+      "key": "('mt', \"i thought i'd find tom there.\", \"i thought i'd find tom there.\")",
+      "labels": [
+        0,
+        0
+      ]
+    },
+    {
+      "key": "('mt', 'we must protect our children.', 'we must protect our children.')",
+      "labels": [
+        0,
+        0
+      ]
+    },
+    {
+      "key": "('mt', 'have you found someone to replace tom?', 'did you find someone to replace tom?')",
+      "labels": [
+        0,
+        0
+      ]
+    },
+    {
+      "key": "('mt', \"why don't you like it?\", \"why don't you like it?\")",
+      "labels": [
+        0,
+        0
+      ]
+    },
+    {
+      "key": "('mt', 'beef is usually more expensive than pork.', 'beef is usually more expensive than pork.')",
+      "labels": [
+        0,
+        0
+      ]
+    },
+    {
+      "key": "('mt', 'does tom always act like this?', 'does tom always do that?')",
+      "labels": [
+        1,
+        0
+      ]
+    },
+    {
+      "key": "('mt', 'the oak is a tree.', 'oak is a tree.')",
+      "labels": [
+        0,
+        0
+      ]
+    },
+    {
+      "key": "('mt', \"tom said he didn't have any money.\", \"tom said he didn't have any money.\")",
+      "labels": [
+        0,
+        0
+      ]
+    },
+    {
+      "key": "('mt', 'are you older or younger?', 'are you older or younger?')",
+      "labels": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "key": "('mt', 'i thought you said that it was yours.', 'you said it was yours.')",
+      "labels": [
+        1,
+        1
+      ]
+    },
+    {
+      "key": "('mt', \"i want to buy a car, but i don't have the money for it.\", \"i want to buy a car, but i don't have any money for it.\")",
+      "labels": [
+        0,
+        0
+      ]
+    },
+    {
+      "key": "('mt', 'i agreed with tom.', 'i agreed with tom.')",
+      "labels": [
+        0,
+        0
+      ]
+    },
+    {
+      "key": "('mt', \"you aren't as fast as you said.\", \"you're not as fast as you said.\")",
+      "labels": [
+        0,
+        0
+      ]
+    },
+    {
+      "key": "('dm', 'to join (several draught animals) together with a yoke; also, to fasten a yoke (on one or more draught animals) to pull a cart, plough, etc.; or to attach (a cart, plough, etc.) to a draught animal.', '(transitive) to fasten with a yoke.')",
+      "labels": [
+        0,
+        0
+      ]
+    },
+    {
+      "key": "('mt', \"tom doesn't know where mary works.\", \"tom doesn't know where mary works.\")",
+      "labels": [
+        0,
+        0
+      ]
+    },
+    {
+      "key": "('mt', 'his success was nothing short of a miracle.', 'his success was nothing but a miracle.')",
+      "labels": [
+        0,
+        0
+      ]
+    },
+    {
+      "key": "('mt', \"you'll need our help.\", \"you'll need our help.\")",
+      "labels": [
+        0,
+        0
+      ]
+    },
+    {
+      "key": "('mt', 'what is it you want to talk about?', 'what do you want to talk about?')",
+      "labels": [
+        0,
+        0
+      ]
+    },
+    {
+      "key": "('mt', \"i'm not going to listen to you.\", \"i'm not gonna listen to you.\")",
+      "labels": [
+        0,
+        0
+      ]
+    },
+    {
+      "key": "('mt', 'they were waiting for the signal to start.', 'they were waiting for a signal to start.')",
+      "labels": [
+        1,
+        1
+      ]
+    },
+    {
+      "key": "('mt', 'what are you planning on doing?', 'what are you planning to do?')",
+      "labels": [
+        0,
+        0
+      ]
+    },
+    {
+      "key": "('mt', 'tom said it was on his desk.', 'tom said he had it on his desk.')",
+      "labels": [
+        1,
+        0
+      ]
+    },
+    {
+      "key": "('mt', \"was it tom who told you i'd come?\", 'did tom tell you i was coming?')",
+      "labels": [
+        0,
+        0
+      ]
+    },
+    {
+      "key": "('mt', \"i don't like going to bed early.\", \"i don't like to go to bed early.\")",
+      "labels": [
+        0,
+        0
+      ]
+    },
+    {
+      "key": "('mt', \"he wasn't much help.\", 'there was little push from him.')",
+      "labels": [
+        1,
+        1
+      ]
+    },
+    {
+      "key": "('mt', \"why can't we stay here?\", \"why can't we stay here?\")",
+      "labels": [
+        0,
+        0
+      ]
+    },
+    {
+      "key": "('mt', \"i haven't yet said goodbye to tom.\", \"i haven't said goodbye to tom yet.\")",
+      "labels": [
+        0,
+        0
+      ]
+    }
+  ],
+  "conflicting_details": [
+    {
+      "key": "('mt', 'the smell of wisteria strengthens and restores the memory.', 'the smell of glycinia strengthens and restores memory.')",
+      "labels": [
+        0,
+        1
+      ]
+    },
+    {
+      "key": "('mt', 'does tom always act like this?', 'does tom always do that?')",
+      "labels": [
+        1,
+        0
+      ]
+    },
+    {
+      "key": "('mt', 'tom said it was on his desk.', 'tom said he had it on his desk.')",
+      "labels": [
+        1,
+        0
+      ]
+    }
+  ]
+}

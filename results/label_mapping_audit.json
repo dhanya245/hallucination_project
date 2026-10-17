@@ -1,0 +1,29 @@
+{
+  "model_id2label": {
+    "0": "entailment",
+    "1": "not_entailment"
+  },
+  "model_label2id": {
+    "entailment": 0,
+    "not_entailment": 1
+  },
+  "shroom_validation_label_counts": {
+    "Not Hallucination": 281,
+    "Hallucination": 218
+  },
+  "shroom_validation_task_label_counts": {
+    "DM": {
+      "Not Hallucination": 95,
+      "Hallucination": 92
+    },
+    "MT": {
+      "Hallucination": 81,
+      "Not Hallucination": 106
+    },
+    "PG": {
+      "Not Hallucination": 80,
+      "Hallucination": 45
+    }
+  },
+  "required_action": "Validate prediction mapping against model training procedure and SHROOM labels before presenting output as Reliable/Hallucinated."
+}

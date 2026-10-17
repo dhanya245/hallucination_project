@@ -1,0 +1,12 @@
+{
+  "task": "PG",
+  "examples": 125,
+  "correct_predictions": 83,
+  "incorrect_predictions": 42,
+  "mean_confidence_correct": 0.8687837719917297,
+  "mean_confidence_incorrect": 0.7908749580383301,
+  "error_detection_auroc": 0.6853126792885829,
+  "error_detection_average_precision": 0.4935643723504298,
+  "error_prevalence": 0.336,
+  "finding": "Confidence has some ability to rank incorrect PG predictions, but remains imperfect."
+}

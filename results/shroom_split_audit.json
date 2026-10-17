@@ -1,0 +1,44 @@
+{
+  "train": {
+    "examples": 30000,
+    "tasks": {
+      "MT": 10000,
+      "DM": 10000,
+      "PG": 10000
+    },
+    "label_field_present_for_all": false,
+    "label_distribution": "Unavailable",
+    "fields": [
+      "hyp",
+      "tgt",
+      "src",
+      "ref",
+      "task",
+      "model"
+    ]
+  },
+  "validation": {
+    "examples": 499,
+    "tasks": {
+      "DM": 187,
+      "PG": 125,
+      "MT": 187
+    },
+    "label_field_present_for_all": true,
+    "label_distribution": {
+      "Not Hallucination": 281,
+      "Hallucination": 218
+    },
+    "fields": [
+      "hyp",
+      "ref",
+      "src",
+      "tgt",
+      "model",
+      "task",
+      "labels",
+      "label",
+      "p(Hallucination)"
+    ]
+  }
+}

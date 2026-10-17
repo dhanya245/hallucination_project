@@ -1,0 +1,31 @@
+{
+  "method": "paired bootstrap",
+  "bootstrap_iterations": 2000,
+  "random_seed": 42,
+  "evaluation_examples": 250,
+  "negative_difference_favors": "temperature scaling",
+  "metrics": {
+    "nll": {
+      "difference": -0.05064497317348837,
+      "ci_95": [
+        -0.10059613922543464,
+        0.00020446892078900648
+      ]
+    },
+    "brier": {
+      "difference": -0.007287524234789511,
+      "ci_95": [
+        -0.01785572135393758,
+        0.0035360577473909334
+      ]
+    },
+    "ece": {
+      "difference": -0.03645434761047365,
+      "ci_95": [
+        -0.07173279672861098,
+        0.014175166016817075
+      ]
+    }
+  },
+  "conclusion": "Point estimates favor temperature scaling, but all 95% bootstrap confidence intervals include zero."
+}

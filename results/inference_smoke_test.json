@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "result": {
+    "prediction": "Reliable",
+    "prediction_id": 0,
+    "confidence": 0.846428394317627,
+    "class_probabilities": {
+      "Reliable": 0.846428394317627,
+      "Hallucinated": 0.15357168018817902
+    }
+  }
+}

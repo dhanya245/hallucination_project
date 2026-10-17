@@ -1,0 +1,14 @@
+[
+  {
+    "task": "DM",
+    "reference": "The quality of being a princess.",
+    "hypothesis": "The state or quality of being a princess.",
+    "training_match_count": 2
+  },
+  {
+    "task": "DM",
+    "reference": "Somewhat sandy.",
+    "hypothesis": "Somewhat sandy.",
+    "training_match_count": 1
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "DM": {
+    "examples": 187,
+    "error_count": 38,
+    "error_prevalence": 0.20320855614973263,
+    "error_detection_auroc": 0.5241963970328506,
+    "error_detection_average_precision": 0.22140861658171046
+  },
+  "MT": {
+    "examples": 187,
+    "error_count": 30,
+    "error_prevalence": 0.16042780748663102,
+    "error_detection_auroc": 0.670276008492569,
+    "error_detection_average_precision": 0.21860325181046303
+  },
+  "PG": {
+    "examples": 125,
+    "error_count": 42,
+    "error_prevalence": 0.336,
+    "error_detection_auroc": 0.6660929432013769,
+    "error_detection_average_precision": 0.43751953982838565
+  }
+}

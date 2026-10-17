@@ -1,0 +1,30 @@
+{
+  "artifacts": {
+    "baseline/config.json": true,
+    "baseline/model.safetensors": true,
+    "baseline/tokenizer_config.json": true,
+    "confidence/confidence_epoch_1.pt": true,
+    "confidence/confidence_epoch_2.pt": true,
+    "confidence/training_history.json": true,
+    "confidence/controlled_head_only/training_history.json": true,
+    "data/labeled_6k.json": true,
+    "data/labeled_deduplicated_no_conflicts.json": true,
+    "data/contrastive_pairs.json": true,
+    "inference.py": true,
+    "README.md": true,
+    "requirements.txt": true,
+    "results/P1_research_results.md": true,
+    "results/literature_review.md": true,
+    "train.py": false,
+    "model.py": false,
+    "loss.py": false,
+    "training_config.json": false
+  },
+  "missing_training_source_files": [
+    "train.py",
+    "model.py",
+    "loss.py",
+    "training_config.json"
+  ],
+  "note": "File existence audit only. Found artifacts do not guarantee that training can be reproduced exactly."
+}

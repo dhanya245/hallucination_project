@@ -1,0 +1,36 @@
+{
+  "project": "TruthLens - Hallucination Detection",
+  "created_utc": "2026-10-16T10:15:55.507722+00:00",
+  "baseline": {
+    "directory": "baseline",
+    "checkpoint": "baseline/model.safetensors",
+    "verified_f1": 0.7764227642276422,
+    "verified_accuracy": 0.779559118236473
+  },
+  "contrastive_model": {
+    "epoch_1": "confidence/confidence_epoch_1.pt",
+    "epoch_2": "confidence/confidence_epoch_2.pt",
+    "training_history": "confidence/training_history.json"
+  },
+  "confidence_head": {
+    "epoch_1": "confidence/head_only/head_epoch_1.pt",
+    "epoch_2": "confidence/head_only/head_epoch_2.pt",
+    "evaluation": "confidence/head_only/evaluation.json"
+  },
+  "datasets": {
+    "training": "data/labeled_6k.json",
+    "contrastive_pairs": "data/contrastive_pairs.json",
+    "validation_source": "data/SHROOM_dev-v2.zip"
+  },
+  "results": {
+    "baseline": "results/baseline_metrics.json",
+    "verified_comparison": "results/verified_model_comparison.json"
+  },
+  "recovery_notes": [
+    "Mount Google Drive after a runtime reset.",
+    "Restore the baseline from its saved checkpoint; do not retrain it.",
+    "Recreate custom model classes and validation preprocessing as needed.",
+    "Load saved contrastive checkpoints only when required.",
+    "Use the same validation split and metric definitions for comparisons."
+  ]
+}

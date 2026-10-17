@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "check_type": "structural_checkpoint_compatibility",
+  "device": "cpu",
+  "full_confidence_checkpoint": {
+    "path": "confidence/confidence_epoch_2.pt",
+    "loaded_strictly": true,
+    "class_logits_shape": [
+      2,
+      2
+    ],
+    "confidence_logits_shape": [
+      2
+    ],
+    "confidence_scores_shape": [
+      2
+    ],
+    "outputs_finite": true
+  },
+  "controlled_head_checkpoint": {
+    "path": "confidence/controlled_head_only/controlled_head_epoch_2.pt",
+    "loaded_strictly": true,
+    "weight_shape": [
+      1,
+      1024
+    ],
+    "bias_shape": [
+      1
+    ],
+    "parameter_count": 1025
+  },
+  "limitations": [
+    "Smoke-test inputs are illustrative, not evaluation data.",
+    "This confirms loading and output shapes only.",
+    "It does not verify exact historical training reproduction or predictive quality."
+  ],
+  "recorded_at_utc": "2026-10-17T07:43:30Z"
+}

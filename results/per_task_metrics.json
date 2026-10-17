@@ -1,0 +1,30 @@
+{
+  "experiment": "baseline_per_task_evaluation",
+  "results": [
+    {
+      "Task": "DM",
+      "Examples": 187,
+      "Accuracy": 0.7967914438502673,
+      "Precision": 0.78125,
+      "Recall": 0.8152173913043478,
+      "F1": 0.7978723404255319
+    },
+    {
+      "Task": "MT",
+      "Examples": 187,
+      "Accuracy": 0.839572192513369,
+      "Precision": 0.7524752475247525,
+      "Recall": 0.9382716049382716,
+      "F1": 0.8351648351648352
+    },
+    {
+      "Task": "PG",
+      "Examples": 125,
+      "Accuracy": 0.664,
+      "Precision": 0.5194805194805194,
+      "Recall": 0.8888888888888888,
+      "F1": 0.6557377049180327
+    }
+  ],
+  "finding": "PG has the lowest F1 and accuracy. Its high recall and lower precision suggest potential false-positive errors."
+}

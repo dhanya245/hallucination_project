@@ -1,0 +1,8 @@
+{
+  "training_unique_examples": 5909,
+  "validation_unique_examples": 498,
+  "overlap_count": 2,
+  "validation_overlap_percentage": 0.4,
+  "normalization": "lowercase and collapse whitespace",
+  "note": "Exact/normalized text overlap only; semantic overlap not tested."
+}

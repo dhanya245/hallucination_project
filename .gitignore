@@ -1,0 +1,18 @@
+
+
+# Full-text research PDFs and extracted source text
+results/full_text/*.pdf
+results/full_text/*.txt
+
+# Large model artifacts
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.onnx
+
+# Secrets
+.env
+.env.*
+!.env.example

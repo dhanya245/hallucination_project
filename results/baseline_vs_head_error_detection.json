@@ -1,0 +1,23 @@
+{
+  "DM": {
+    "baseline_error_auroc": 0.6229247615683504,
+    "head_error_auroc": 0.5241963970328506,
+    "baseline_accuracy": 0.7967914438502673,
+    "head_accuracy": 0.7967914438502673,
+    "predictions_identical": true
+  },
+  "MT": {
+    "baseline_error_auroc": 0.7876857749469215,
+    "head_error_auroc": 0.670276008492569,
+    "baseline_accuracy": 0.839572192513369,
+    "head_accuracy": 0.839572192513369,
+    "predictions_identical": true
+  },
+  "PG": {
+    "baseline_error_auroc": 0.6853126792885829,
+    "head_error_auroc": 0.6660929432013769,
+    "baseline_accuracy": 0.664,
+    "head_accuracy": 0.664,
+    "predictions_identical": true
+  }
+}

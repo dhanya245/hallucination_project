@@ -1,0 +1,32 @@
+{
+  "method": "temperature_scaling",
+  "experiment": "5 stratified random splits",
+  "dataset_size": 499,
+  "test_fraction": 0.5,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "mean_metrics": {
+    "original_nll": 0.5204,
+    "scaled_nll": 0.4663,
+    "nll_improvement": 0.0542,
+    "original_brier": 0.1618,
+    "scaled_brier": 0.1529,
+    "brier_improvement": 0.0089,
+    "original_ece": 0.0989,
+    "scaled_ece": 0.0565,
+    "ece_improvement": 0.0425
+  },
+  "temperatures": [
+    2.37,
+    2.055,
+    1.86,
+    1.95,
+    2.125
+  ],
+  "note": "Overlapping splits of one validation set; preliminary evidence."
+}
